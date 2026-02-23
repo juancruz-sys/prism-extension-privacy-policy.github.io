@@ -1,1 +1,1 @@
-# prism-extension-privacy-policy.github.io-
+# prism-extension-privacy-policy
