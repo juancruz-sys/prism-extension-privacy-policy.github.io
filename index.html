@@ -9,34 +9,60 @@
     h1 { margin-bottom: 8px; }
     .muted { color: #666; margin-bottom: 24px; }
     code { background: #f4f4f4; padding: 2px 5px; border-radius: 4px; }
+    ul { margin-top: 8px; }
   </style>
 </head>
 <body>
   <h1>Prism Extension Privacy Policy</h1>
   <p class="muted"><strong>Last updated:</strong> February 23, 2026</p>
 
-  <p>Prism is a Chrome extension used to copy QA task data from the currently active task page and autofill the Prism QA validation form.</p>
+  <p>
+    Prism is a Chrome extension that helps users copy <strong>text entered in internal QA task forms</strong> from a supported active page
+    and autofill it into the Prism QA validation form. The extension runs <strong>only when the user clicks</strong> its actions (Copy / Autofill).
+  </p>
 
-  <h2>1. Data We Access</h2>
-  <p>Prism may access and read website content (such as form field values and task-related text on supported pages) only when the user explicitly clicks the extension action (for example, “Copy QA Data” or “Autofill QA Form”).</p>
-  <p>Prism does not collect data automatically in the background and does not crawl unrelated tabs or websites.</p>
+  <h2>1. Information We Access</h2>
+  <p>
+    Prism may access <strong>website content</strong> on supported pages (for example, internal form field values and task-related text)
+    <strong>only after an explicit user action</strong>, such as clicking “Copy QA Data” or “Autofill QA Form”.
+  </p>
+  <ul>
+    <li>No background collection or monitoring.</li>
+    <li>No crawling of unrelated websites.</li>
+    <li>No access to other tabs unless the user explicitly uses the extension on that tab.</li>
+  </ul>
 
-  <h2>2. How We Use Data</h2>
-  <p>The data read from supported pages is used solely to copy QA task values from the active page and autofill the Prism QA validation form. This use is limited to the extension’s single purpose.</p>
+  <h2>2. How We Use Information</h2>
+  <p>
+    The accessed text is used <strong>only</strong> to copy values from the currently active supported QA task page and autofill the Prism QA form.
+    Prism does not use this content for analytics, advertising, profiling, or any unrelated purpose.
+  </p>
 
-  <h2>3. Storage</h2>
-  <p>Prism stores the most recent copied QA payload in <code>chrome.storage.local</code> (local browser storage on the user’s device) so the user can copy data first and autofill later.</p>
-  <p>Data remains on the device unless the user clears browser storage or overwrites the stored payload by using the extension again.</p>
+  <h2>3. Local Storage</h2>
+  <p>
+    Prism stores the most recent copied <strong>text payload</strong> in <code>chrome.storage.local</code> (local storage on the user’s device)
+    to allow users to copy first and autofill later.
+  </p>
+  <p>
+    This stored text is <strong>not transmitted</strong> to external servers and is overwritten on each new copy action, or removed if the user clears
+    browser/extension storage.
+  </p>
 
-  <h2>4. Data Sharing and Transfer</h2>
+  <h2>4. Sharing and Transfers</h2>
   <p>Prism does not sell, share, or transfer user data to third parties.</p>
-  <p>Prism does not transmit copied QA data to external servers.</p>
+  <p>Prism does not send copied form text to any external servers.</p>
 
   <h2>5. Permissions</h2>
-  <p>Prism uses Chrome extension permissions (<code>activeTab</code>, <code>tabs</code>, <code>scripting</code>, and <code>storage</code>) only as necessary to perform its single purpose after user interaction.</p>
+  <p>Prism requests permissions only to perform its user-initiated Copy/Autofill functionality on supported pages:</p>
+  <ul>
+    <li><code>activeTab</code>: temporary access to the active tab after a user click.</li>
+    <li><code>tabs</code>: identify the active tab and validate the supported page context.</li>
+    <li><code>scripting</code>: run scripts in the active tab to read form text and autofill the Prism form.</li>
+    <li><code>storage</code>: store the most recent copied text locally for later autofill.</li>
+  </ul>
 
-  <h2>6. Availability</h2>
-  <p>This extension is intended for authorized members of the <code>expert.micro1.ai</code> workspace.</p>
+  <h2>6. Intended Audience</h2>
+  <p>This extension is intended for authorized users of the <code>expert.micro1.ai</code> workspace and supported internal QA pages.</p>
 
   <h2>7. Contact</h2>
   <p>For questions about this Privacy Policy, contact: <a href="mailto:juan.cruz@expert.micro1.ai">juan.cruz@expert.micro1.ai</a></p>
